@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+/* ======================header=================== */
+
+/* ====================================header ends===================== */
+.br50{
+    border-radius: 50px;
+    margin-top: 120px;
+}
+.main_container{
+    flex:1;
+    border-radius: 50px;
+    /* margin-top: 120px; */
+    height: 600px;
+}
+
+.icons{
+    color: #fa0463;
+    margin-right: 12px;
+   
+}
+
+.illustration{
+    width: 500px;
+}
+@media only screen and (max-width: 985px) {
+    .eww{
+        display: none;
+    }
+}
+
+.eww{
+    text-align: center;
+}
+.menu{
+    color: #fa0463;
+}
+
+/* .btn-primary{
+    background-color: #fa0463!important;
+
+}
+.hfgbtn-primary:focus{
+    background-color: #fa0463!important;
+} */
