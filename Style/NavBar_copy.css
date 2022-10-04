@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  
+}
+
+body{
+    width: 100%;
+}
+/* =======================================header css====================================== */
+header{
+    left: 0;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+
+}
+header ul{
+  
+    display: flex;
+    justify-content: center;
+    
+}
+header ul li{
+   
+    list-style: none;
+    font-size:1.3vw ;
+    
+}
+header ul li a{
+    
+    display: inline-block;
+    margin: 0 1em;
+    text-decoration: none;
+    color: white;
+    position: relative;
+    list-style: none;
+      
+}
+header.sticky{
+    background:#fa0463;
+    padding: 10px 50px;
+
+}
+header{
+    z-index: 1000000;
+    overflow: hidden;
+    transition: 0.5s;
+}
+header .logo{
+    font-size: 1.5vw;
+    font-weight: bold;
+    color: white;
+}
+/* .menu{
+    display: flex;
+    justify-content: space-evenly;
+} */
+header ul li a::before{
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 2.5px;
+    background-color: white;
+    bottom: 0;
+    transition: all 0.5s linear;
+    opacity: 0;
+}
+header ul li a:hover::before{
+    opacity: 1;
+    width: 100%;
+    
+}
+header ul li a:hover{
+    color: white;
+}
